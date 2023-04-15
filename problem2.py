@@ -26,3 +26,4 @@ for char in encrypted_text:
     else:
         plain_text += char
 # Display the plain text
+print("Plain text:", plain_text)
