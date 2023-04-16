@@ -28,8 +28,7 @@ for char in encrypted_text:
 # Read the encrypted text
 import time
 for i in range(1, 101):
-    print(f"\rDecrypting... {i}%", end='', flush=True)
-    time.sleep(0.05)
-print("\nProcessing complete.")
+    print(f"\r\033[31mDecrypting... {i}%\033[0m", end='', flush=True)
+    time.sleep(0.03)
 # Display the plain text
-print("Plain text:", plain_text)
+print("\nPlain text:", plain_text)
