@@ -31,4 +31,4 @@ for i in range(1, 101):
     print(f"\r\033[31mDecrypting... {i}%\033[0m", end='', flush=True)
     time.sleep(0.03)
 # Display the plain text
-print("\nPlain text:", plain_text)
+print("\nPlain text: \033[34m" + plain_text + "\033[0m")
