@@ -25,5 +25,11 @@ for char in encrypted_text:
         plain_text += "u"
     else:
         plain_text += char
+# Read the encrypted text
+import time
+for i in range(1, 101):
+    print(f"\rDecrypting... {i}%", end='', flush=True)
+    time.sleep(0.05)
+print("\nProcessing complete.")
 # Display the plain text
 print("Plain text:", plain_text)
